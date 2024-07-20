@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<layout>
+	<gadget name="camEditor" type="gadget" size1024="0 565 798 767" titlebar="$$20507$$Camera Track Editor" background="ui\ui_med_gray" tilebackground="" locktitlebarmove="">
+		<gadget type="button" name="camEdit-newbtn" size1024="159 598 209 623" bevelbutton="" textcolor="0 0 0" textfont="Arial nodrop" tooltiptext="CAUTION: All Tracks Will Be Deleted" textfontsize="12">$$19009$$Clear
+			<command>trackClear</command>
+		</gadget>
+		<gadget name="OpenTrigButton" type="button" tooltiptext="$$20517$$Trigger Editor" foreground="icons\Editor Triggers" size1024="159 690 179 710">
+			<command>editMode("Triggers")</command>
+		</gadget>
+		<gadget name="OpenKamButton" type="button" tooltiptext="$$20336$$Copy Paste" foreground="icons\Editor Trackload" size1024="189 690 209 710">
+			<command>gadgetToggle("KameraKop")</command>
+		</gadget>
+		<gadget type="button" name="camEdit-hidebtn" size1024="160 719 210 744" bevelbutton="" textcolor="0 0 0" textfont="Arial nodrop" tooltiptext="Show Camera Course" textfontsize="12">$$20508$$Show
+			<command>trackToggleShow</command>
+		</gadget>
+		<gadget type="list" name="camEdit-Track-list" titlebar="$$20523$$Tracks" size1024="11 598 152 753" textcolor="0 0 0" background="ui\ui_dark_gray" showselect="" selectedcolor="255 255 255" buttonsize1024="115 15" scrollvert="" locktitlebarmove=""></gadget>
+		<gadget type="button" name="camEdit-Track-insbtn" size1024="159 627 209 652" bevelbutton="" textcolor="0 0 0" textfont="Arial nodrop" tooltiptext="New Track" textfontsize="12">$$20488$$Insert
+			<command>trackInsert</command>
+		</gadget>
+		<gadget type="button" name="camEdit-Track-delbtn" size1024="159 657 209 682" bevelbutton="" textcolor="0 0 0" textfont="Arial nodrop" tooltiptext="Remove Track" textfontsize="12">$$18574$$Delete
+			<command>trackRemove</command>
+		</gadget>
+		<gadget type="textField" name="camEdit-Name" size1024="219 598 401 623" textcolor="0 0 80" textfont="Arial nobold nodrop" textfontsize="12" tooltiptext="Track Name" history="">$$20509$$Name</gadget>
+		<gadget type="textField" name="camEdit-Duration" size1024="219 627 401 652" textcolor="0 0 0" textfont="Arial nobold nodrop" textfontsize="12" history="" tooltiptext="Track Duration" numberfield="">$$20510$$Duration</gadget>
+		<gadget type="button" name="camEdit-yawleft" size1024="278 662 298 682" foreground="UI\l-a-arrow" bevelbutton="" textcolor="0 0 0" textfont="AgeText" tooltiptext="Rotate Camera" textfontsize="12">
+			<command>cameraYawLeft(1) cameraYawLeft(0)</command>
+		</gadget>
+		<gadget type="button" name="camEdit-stop" size1024="303 662 323 682" foreground="icons\icon camera stop" bevelbutton="" textcolor="0 0 0" textfont="AgeText" tooltiptext="$$20926$$Stop" textfontsize="12">
+			<command>cameraYawLeft(1)</command>
+		</gadget>
+		<gadget type="button" name="camEdit-stop" size1024="328 662 348 682" foreground="icons\icon camera stop" bevelbutton="" textcolor="0 0 0" textfont="AgeText" tooltiptext="$$20926$$Stop" textfontsize="12">
+			<command>cameraYawRight(1)</command>
+		</gadget>
+		<gadget type="button" name="camEdit-yawright" size1024="353 662 373 682" foreground="UI\r-a-arrow" bevelbutton="" textcolor="0 0 0" textfont="AgeText" tooltiptext="Rotate Camera" textfontsize="12">
+			<command>cameraYawRight(1) cameraYawRight(0)</command>
+		</gadget>
+		<gadget type="button" name="camEdit-Track-show0" size1024="384 662 400 678" foreground="UI\ui_dark_gray" bevelbutton="" textcolor="0 0 0" textfont="Arial nobold" tooltiptext="$$19537$$Camera Start" textfontsize="12">0
+			<command>trackGotoSelectedWaypoint(0)</command>
+		</gadget>
+		<gadget type="button" name="camEdit-Track-show0" size1024="384 683 400 699" foreground="UI\ui_dark_gray" bevelbutton="" textcolor="0 0 0" textfont="Arial nobold" tooltiptext="Waypoint 1" textfontsize="12">1
+			<command>trackGotoSelectedWaypoint(1)</command>
+		</gadget>
+		<gadget type="button" name="camEdit-Track-show0" size1024="384 701 400 717" foreground="UI\ui_dark_gray" bevelbutton="" textcolor="0 0 0" textfont="Arial nobold" tooltiptext="Waypoint 2" textfontsize="12">2
+			<command>trackGotoSelectedWaypoint(2)</command>
+		</gadget>
+		<gadget type="button" name="camEdit-Track-show0" size1024="384 719 400 735" foreground="UI\ui_dark_gray" bevelbutton="" textcolor="0 0 0" textfont="Arial nobold" tooltiptext="Waypoint 3" textfontsize="12">3
+			<command>trackGotoSelectedWaypoint(3)</command>
+		</gadget>
+		<gadget type="button" name="camEdit-Track-show0" size1024="384 737 400 753" foreground="UI\ui_dark_gray" bevelbutton="" textcolor="0 0 0" textfont="Arial nobold" tooltiptext="Waypoint 4" textfontsize="12">4
+			<command>trackGotoSelectedWaypoint(4)</command>
+		</gadget>
+		<gadget type="slider" name="camEdit-progress" size1024="240 687 373 712" textcolor="0 0 0"></gadget>
+		<gadget type="button" name="camEdit-backbtn" size1024="240 719 265 744" bevelbutton="" tooltiptext="Track Step Backward" textcolor="0 0 0" foreground="icons\icon camera step backward">
+			<command>trackStepBackward</command>
+		</gadget>
+		<gadget type="button" name="camEdit-pausebtn" size1024="267 719 292 744" bevelbutton="" tooltiptext="Track Pause" textcolor="0 0 0" foreground="icons\icon camera pause">
+			<command>trackPause</command>
+		</gadget>
+		<gadget type="button" name="camEdit-stopbtn" size1024="294 719 319 744" bevelbutton="" tooltiptext="Track Stop" textcolor="0 0 0" foreground="icons\icon camera stop">
+			<command>trackStop</command>
+		</gadget>
+		<gadget type="button" name="camEdit-playbtn" size1024="321 719 346 744" bevelbutton="" tooltiptext="Track Play" textcolor="0 0 0" foreground="icons\icon camera play">
+			<command>trackPlay(10.0)</command>
+		</gadget>
+		<gadget type="button" name="camEdit-fwdbtn" size1024="348 719 373 744" bevelbutton="" tooltiptext="Track Step Forward" textcolor="0 0 0" foreground="icons\icon camera step forward">
+			<command>trackStepForward</command>
+		</gadget>
+		<gadget type="list" name="camEdit-Waypoint-list" titlebar="$$20511$$Waypoints" size1024="414 598 555 753" textcolor="0 0 0" background="ui\ui_dark_gray" showselect="" selectedcolor="255 255 255" buttonsize1024="115 15" scrollvert="" locktitlebarmove="" allowdoubleclick=""></gadget>
+		<gadget type="button" name="camEdit-addbtn" size1024="562 598 612 623" bevelbutton="" tooltiptext="New Waypoint" textcolor="0 0 0" textfont="Arial nodrop" textfontsize="12">$$18573$$Add
+			<command>trackAddWaypoint</command>
+		</gadget>
+		<gadget type="button" name="camEdit-delbtn" size1024="562 627 612 652" bevelbutton="" tooltiptext="Remove Waypoint" textcolor="0 0 0" textfont="Arial nodrop" textfontsize="12">$$18574$$Delete
+			<command>trackRemoveWaypoint</command>
+		</gadget>
+		<gadget type="button" name="camEdit-applybtn" size1024="562 657 612 682" bevelbutton="" tooltiptext="Edit Waypoint" textcolor="0 0 0" textfont="Arial nodrop" textfontsize="12">$$20512$$Update
+			<command>trackEditWaypoint</command>
+		</gadget>
+		<gadget type="button" name="camEdit-pitch" size1024="562 695 612 720" bevelbutton="" textcolor="0 0 0" textfont="Arial nodrop" tooltiptext="Pitch Editor" textfontsize="12">Pitch
+			<command>gadgetToggle("ChangeBias")</command>
+		</gadget>
+		<gadget type="button" name="camEdit-lock" size1024="562 725 612 750" bevelbutton="" textcolor="0 0 0" textfont="Arial nodrop" tooltiptext="Normal View" textfontsize="12">$$18853$$Normal
+			<command>cameraRotate() cameraRotate()</command>
+		</gadget>
+		<gadget type="button" name="camEdit-hero" size1024="617 725 667 750" bevelbutton="" textcolor="0 0 0" textfont="Arial nodrop" tooltiptext="$$20293$$View" textfontsize="12">$$20293$$View
+			<command>gadgetToggle("rotKamera")</command>
+		</gadget>
+		<gadget name="camEdit-openSetCamera" type="button" tooltiptext="$$22382$$Set Cut" foreground="icons\Editor camera cut" size1024="672 727 692 747">
+			<command>gadgetToggle("cameraCutModus")</command>
+		</gadget>
+		<gadget name="camEdit-AnimButton" type="button" tooltiptext="$$24009$$View Animations" foreground="icons\Editor animation" size1024="697 727 717 747">
+			<command>gadgetToggle("animgadget")</command>
+		</gadget>
+		<gadget type="button" name="camEdit-close" size1024="722 725 788 750" bevelbutton="" textcolor="0 0 0" textfont="Arial nodrop" tooltiptext="$$18457$$Close" textfontsize="12">$$18457$$Close
+			<command>editMode("None")</command>
+		</gadget>
+		<gadget type="textField" name="camEdit-Time" size1024="623 598 788 623" textcolor="0 0 0" textfont="Arial nobold nodrop" textfontsize="12" history="" tooltiptext="Waypoint Duration" numberfield="">$$20513$$Time</gadget>
+		<gadget type="textField" name="camEdit-Tension" size1024="623 627 788 652" textcolor="0 0 0" textfont="Arial nobold nodrop" textfontsize="12" history="" numberfield="">$$20514$$Tension</gadget>
+		<gadget type="textField" name="camEdit-Continuity" size1024="623 657 788 682" textcolor="0 0 0" textfont="Arial nobold nodrop" textfontsize="12" history="" numberfield="">$$20515$$Continuity</gadget>
+		<gadget type="textField" name="camEdit-Bias" size1024="623 687 788 712" textcolor="0 0 0" textfont="Arial nobold nodrop" textfontsize="12" history="" numberfield="">$$20516$$Bias</gadget>
+		<gadget type="gadget" name="gadgettohideevents" hidden="">
+			<gadget type="list" name="camEdit-Event-list" titlebar="Events" size1024="815 600 955 750" textcolor="0 0 0" background="ui\ui_dark_gray" showselect="" selectedcolor="255 255 255" buttonsize1024="115 15" scrollvert="" locktitlebarmove="" allowdoubleclick=""></gadget>
+			<gadget type="button" name="camEdit-event-addbtn" size1024="960 600 1010 625" bevelbutton="" textcolor="0 0 0" textfont="Arial nodrop" textfontsize="12">$$18573$$Add</gadget>
+			<gadget type="button" name="camEdit-event-delbtn" size1024="960 630 1010 655" bevelbutton="" textcolor="0 0 0" textfont="Arial nodrop" textfontsize="12">$$18574$$Delete</gadget>
+		</gadget>
+	</gadget>
+	<gadget name="KameraKop" type="gadget" size1024="0 430 209 564" hidden="" moveable="" closeonesc="" titlebar="$$20336$$Copy Paste" background="ui\ui_med_gray">
+		<gadget name="saveText" type="button" bevel="" sizerel1024="10 15 199 35" textcenterhoriz="" tooltiptext="Camera Track Save As" a-dtype="textFontSize number Z number" textfont="Arial nodrop" textfontsize="12" textcolor="0 0 0">Camera Track Save As
+			<command>uiSaveCameraTrackBrowser</command>
+		</gadget>
+		<gadget name="openText" type="button" bevel="" sizerel1024="10 45 199 65" tooltiptext="Load Camera Track" a-dtype="textFontSize number Z number" textfont="Arial nodrop" textfontsize="12" textcolor="0 0 0">Load Camera Track
+			<command>uiOpenCameraTrackBrowser</command>
+		</gadget>
+		<gadget name="SaveKamButton" type="button" tooltiptext="Copy Track" foreground="icons\Editor Copy" sizerel1024="79 75 99 95">
+			<command>trackSave</command>
+		</gadget>
+		<gadget name="OpenKamButton" type="button" tooltiptext="Paste Track" foreground="icons\Editor Paste" sizerel1024="119 75 139 95">
+			<command>trackLoad</command>
+		</gadget>
+		<gadget type="button" name="triggerHinweis" sizerel1024="10 77 26 93" tooltiptext="$$40134$$" z="2" foreground="ui\yellowdot">
+			<command>uiTopicDetailHelp("track")</command>
+		</gadget>
+		<gadget name="closeKamKop" type="button" tooltiptext="$$18457$$Close" foreground="ui\ui_close_alpha" sizerel1024="183 77 199 93">
+			<command>gadgetUnreal("KameraKop")</command>
+		</gadget>
+	</gadget>
+	<gadget name="ChangeBias" type="gadget" size1024="0 500 254 768" closeonesc="" background="UI\ui_med_gray" bevel="" titlebar="Pitch Editor" hidden="" moveable="" windowzstyle="">
+		<gadget name="closePitchEditor" type="button" tooltiptext="$$18457$$Close" foreground="ui\ui_close_alpha" size1024="234 525 250 541">
+			<command>gadgetUnreal("ChangeBias")</command>
+		</gadget>
+		<gadget name="maxZoomText" type="textBox" textfont="Arial nodrop" textfontsize="12" textcolor="0 0 0" size1024="67 529 147 545">Max. Zoom</gadget>
+		<gadget name="CinematicsButton" type="button" tooltiptext="$$20291$$Camera Editor" foreground="icons\Editor Cinematics" size1024="22 550 42 570">
+			<command>editMode("CameraTracks")</command>
+		</gadget>
+		<gadget name="maxZoomList" type="textField" scrollvert="" tooltiptext="First Open the Camera Editor" size1024="67 550 147 570" textcolor="0 0 0" textfont="Arial nobold nodrop" showselect="" textfontsize="12">
+			<dropdown command="configSetInt(&quot;minZoom&quot;,150) cameraRotate() cameraRotate()">150</dropdown>
+			<dropdown command="configSetInt(&quot;minZoom&quot;,175) cameraRotate() cameraRotate()">175</dropdown>
+			<dropdown command="configSetInt(&quot;minZoom&quot;,200) cameraRotate() cameraRotate()">200</dropdown>
+			<dropdown command="configSetInt(&quot;minZoom&quot;,250) cameraRotate() cameraRotate()">250</dropdown>
+			<dropdown command="configSetInt(&quot;minZoom&quot;,300) cameraRotate() cameraRotate()">300</dropdown>
+			<dropdown command="configSetInt(&quot;minZoom&quot;,400) cameraRotate() cameraRotate()">400</dropdown>
+			<dropdown command="configSetInt(&quot;minZoom&quot;,500) cameraRotate() cameraRotate()">500</dropdown>
+			<dropdown command="configSetInt(&quot;minZoom&quot;,750) cameraRotate() cameraRotate()">750</dropdown>
+			<dropdown command="configSetInt(&quot;minZoom&quot;,1000) cameraRotate() cameraRotate()">1000</dropdown>
+			<dropdown command="configSetInt(&quot;minZoom&quot;,100) cameraRotate() cameraRotate()">Normal</dropdown>
+		</gadget>
+		<gadget name="SetCutButton" type="button" tooltiptext="$$22382$$Set Cut" foreground="icons\Editor camera cut" size1024="22 580 42 600">
+			<command>gadgetToggle("cameraCutModus")</command>
+		</gadget>
+		<gadget name="CineLetterboxButton" type="button" tooltiptext="$$22366$$Cinematic Mode" foreground="icons\Editor cinemode" size1024="47 580 67 600">
+			<command>gadgetToggle("LetterboxBlack-topbar") gadgetToggle("LetterboxBlack-bottombar")</command>
+		</gadget>
+		<gadget name="CineTestButton" type="button" tooltiptext="$$20269$$Playtest Scenario" foreground="icons\Editor Test" size1024="75 580 95 600">
+			<command>gadgetUnreal("BruChange") gadgetUnreal("playerModus") gadgetUnreal("landErst") gadgetUnreal("portPict") gadgetUnreal("tgvUI") gadgetUnreal("txtBox") gadgetUnreal("suchBar") gadgetUnreal("ChangeBias") player(1) uiStartScenarioTest</command>
+		</gadget>
+		<gadget name="minZoomText" type="textBox" textfont="Arial nodrop" textfontsize="12" textcolor="0 0 0" size1024="157 529 237 545">Min. Zoom</gadget>
+		<gadget type="button" name="camEdit-zoom" size1024="157 550 192 570" bevelbutton="" textcolor="80 0 0" textfont="Arial nodrop" tooltiptext="$$18443$$Load" textfontsize="12">5
+			<command>configSetInt("minZoom",5) cameraRotate() cameraRotate()</command>
+		</gadget>
+		<gadget type="button" name="camEdit-zoom" size1024="202 550 237 570" bevelbutton="" textcolor="80 0 0" textfont="Arial nodrop" tooltiptext="$$18443$$Load" textfontsize="12">20
+			<command>configSetInt("minZoom",20) cameraRotate() cameraRotate()</command>
+		</gadget>
+		<gadget type="button" name="camEdit-normalmaxzoom" size1024="157 580 237 600" bevelbutton="" textcolor="80 0 0" textfont="Arial nodrop" tooltiptext="Zoom Normal" textfontsize="12">Z Normal
+			<command>configSetInt("minZoom",50) cameraRotate() cameraRotate()</command>
+		</gadget>
+		<gadget type="button" name="camEdit-normalpitch" size1024="157 605 237 625" bevelbutton="" textcolor="0 0 0" textfont="Arial nodrop" tooltiptext="Pitch Normal 45" textfontsize="12">P Normal
+			<command>configSetInt("limitPitch",45) cameraRotate() cameraRotate()</command>
+		</gadget>
+		<gadget type="button" name="normalPitch" size1024="127 605 147 625" tooltiptext="Pitch + Zoom Normal" foreground="icons\Editor zoomnormal">
+			<command>configSetInt("limitPitch",45) configSetInt("minZoom",50) cameraRotate() cameraRotate()</command>
+		</gadget>
+		<gadget name="rotKameraNice2" type="button" tooltiptext="Camera Nice up" foreground="icons\Editor nice2" size1024="104 580 124 600">
+			<command>lookAt(700,700)</command>
+		</gadget>
+		<gadget name="rotKameraNice" type="button" tooltiptext="Camera Nice down" foreground="icons\Editor nice" size1024="127 580 147 600">
+			<command>cameraNice</command>
+		</gadget>
+		<gadget type="button" name="camEditHinweis" size1024="22 609 38 625" tooltiptext="$$40134$$" z="2" foreground="ui\yellowdot">
+			<command>uiTopicDetailHelp("pitch")</command>
+		</gadget>
+		<gadget name="PitchText" type="textBox" textfont="Arial nodrop" textfontsize="12" textcolor="0 0 0" size1024="67 610 147 625">Pitch</gadget>
+		<gadget type="button" name="camEdit-bias" size1024="22 635 57 655" bevelbutton="" textcolor="0 0 0" textfont="Arial nodrop" tooltiptext="$$19176$$Change" textfontsize="12">-60
+			<command>configSetInt("limitPitch",-60) configSetInt("minZoom",-5000) cameraRotate() cameraRotate()</command>
+		</gadget>
+		<gadget type="button" name="camEdit-bias" size1024="67 635 102 655" bevelbutton="" textcolor="0 0 0" textfont="Arial nodrop" tooltiptext="$$19176$$Change" textfontsize="12">-40
+			<command>configSetInt("limitPitch",-40) configSetInt("minZoom",-1000) cameraRotate() cameraRotate()</command>
+		</gadget>
+		<gadget type="button" name="camEdit-bias" size1024="112 635 147 655" bevelbutton="" textcolor="0 0 0" textfont="Arial nodrop" tooltiptext="10x Zoom+" textfontsize="12">-20
+			<command>configSetInt("limitPitch",-20) configSetInt("minZoom",-500) cameraRotate() cameraRotate()</command>
+		</gadget>
+		<gadget type="button" name="camEdit-bias" size1024="157 635 192 655" bevelbutton="" textcolor="0 0 0" textfont="Arial nodrop" tooltiptext="Zoom+ Max." textfontsize="12">-10
+			<command>configSetInt("limitPitch",-10) configSetInt("minZoom",-150) cameraRotate() cameraRotate()</command>
+		</gadget>
+		<gadget type="button" name="camEdit-bias" size1024="202 635 237 655" bevelbutton="" textcolor="0 0 0" textfont="Arial nodrop" tooltiptext="$$19176$$Change" textfontsize="12">1
+			<command>configSetInt("limitPitch",1) configSetInt("minZoom",0) cameraRotate() cameraRotate()</command>
+		</gadget>
+		<gadget type="button" name="camEdit-bias" size1024="22 660 57 680" bevelbutton="" textcolor="0 0 0" textfont="Arial nodrop" tooltiptext="$$19176$$Change" textfontsize="12">5
+			<command>configSetInt("limitPitch",5) configSetInt("minZoom",20) cameraRotate() cameraRotate()</command>
+		</gadget>
+		<gadget type="button" name="camEdit-bias" size1024="67 660 102 680" bevelbutton="" textcolor="0 0 0" textfont="Arial nodrop" tooltiptext="$$19176$$Change" textfontsize="12">10
+			<command>configSetInt("limitPitch",10) configSetInt("minZoom",20) cameraRotate() cameraRotate()</command>
+		</gadget>
+		<gadget type="button" name="camEdit-bias" size1024="112 660 147 680" bevelbutton="" textcolor="0 0 0" textfont="Arial nodrop" tooltiptext="$$19176$$Change" textfontsize="12">15
+			<command>configSetInt("limitPitch",15) cameraRotate() cameraRotate()</command>
+		</gadget>
+		<gadget type="button" name="camEdit-bias" size1024="157 660 192 680" bevelbutton="" textcolor="0 0 0" textfont="Arial nodrop" tooltiptext="$$19176$$Change" textfontsize="12">25
+			<command>configSetInt("limitPitch",25) cameraRotate() cameraRotate()</command>
+		</gadget>
+		<gadget type="button" name="camEdit-bias" size1024="202 660 237 680" bevelbutton="" textcolor="0 0 0" textfont="Arial nodrop" tooltiptext="$$19176$$Change" textfontsize="12">35
+			<command>configSetInt("limitPitch",35) cameraRotate() cameraRotate()</command>
+		</gadget>
+		<gadget type="button" name="camEdit-bias" size1024="22 685 57 705" bevelbutton="" textcolor="0 0 0" textfont="Arial nodrop" tooltiptext="$$19176$$Change" textfontsize="12">55
+			<command>configSetInt("limitPitch",55) cameraRotate() cameraRotate()</command>
+		</gadget>
+		<gadget type="button" name="camEdit-bias" size1024="67 685 102 705" bevelbutton="" textcolor="0 0 0" textfont="Arial nodrop" tooltiptext="$$19176$$Change" textfontsize="12">70
+			<command>configSetInt("limitPitch",70) cameraRotate() cameraRotate()</command>
+		</gadget>
+		<gadget type="button" name="camEdit-bias" size1024="112 685 147 705" bevelbutton="" textcolor="0 0 0" textfont="Arial nodrop" tooltiptext="$$19176$$Change" textfontsize="12">90
+			<command>configSetInt("limitPitch",90) cameraRotate() cameraRotate()</command>
+		</gadget>
+		<gadget type="button" name="camEdit-bias" size1024="157 685 192 705" bevelbutton="" textcolor="0 0 0" textfont="Arial nodrop" tooltiptext="$$19176$$Change" textfontsize="12">110
+			<command>configSetInt("limitPitch",110) cameraRotate() cameraRotate()</command>
+		</gadget>
+		<gadget type="button" name="camEdit-bias" size1024="202 685 237 705" bevelbutton="" textcolor="0 0 0" textfont="Arial nodrop" tooltiptext="$$19176$$Change" textfontsize="12">135
+			<command>configSetInt("limitPitch",135) cameraRotate() cameraRotate()</command>
+		</gadget>
+		<gadget name="camEdit-limit" type="checkButton" tooltiptext="Camera Limit Off/On" textfontsize="12" textfont="Arial nobold nodrop" foreground="ui\ui_check" z="11" size1024="12 710 112 730">Camera Limit
+			<command>cameraLimit</command>
+		</gadget>
+		<gadget name="camEdit-rotate" type="checkButton" configindex="enableCameraRotation" textfontsize="12" textfont="Arial nobold nodrop" tooltiptext="Camera Rotate Off/On" foreground="ui\ui_check" z="11" size1024="117 710 250 730">Camera Rotate
+			<command>cameraRotate</command>
+		</gadget>
+		<gadget type="button" name="camEdit-rotopen" size1024="12 735 82 755" bevelbutton="" textcolor="0 0 0" textfont="Arial nodrop" tooltiptext="Move Camera" textfontsize="12">$$20293$$View
+			<command>gadgetToggle("rotKamera")</command>
+		</gadget>
+		<gadget type="button" name="camEdit-graphik+" size1024="92 735 112 755" bevelbutton="" textcolor="0 0 0" textfont="Arial nodrop" tooltiptext="Graphic Details High" textfontsize="12">+
+			<command>setGraphicDetail(0)</command>
+		</gadget>
+		<gadget type="button" name="camEdit-graphiko" size1024="115 735 135 755" bevelbutton="" textcolor="0 0 0" textfont="Arial nodrop" tooltiptext="Graphic Details Normal" textfontsize="12">o
+			<command>setGraphicDetail(1)</command>
+		</gadget>
+		<gadget type="button" name="camEdit-graphik-" size1024="140 735 160 755" bevelbutton="" textcolor="0 0 0" textfont="AgeText" tooltiptext="Graphic Details Low" textfontsize="12">-
+			<command>setGraphicDetail(2)</command>
+		</gadget>
+		<gadget type="button" name="camEdit-close" size1024="172 735 242 755" bevelbutton="" textcolor="0 0 0" textfont="Arial nodrop" tooltiptext="$$18457$$Close" textfontsize="12">$$18457$$Close
+			<command>gadgetUnReal("ChangeBias")</command>
+		</gadget>
+	</gadget>
+	<gadget name="rotKamera" type="gadget" size1024="0 550 364 768" moveable="" closeonesc="" background="UI\ui_med_gray" bevel="" titlebar="$$20293$$View" hidden="" windowzstyle="">
+		<gadget name="closerotKam" type="button" tooltiptext="$$18457$$Close" foreground="ui\ui_close_alpha" sizerel1024="345 5 361 21">
+			<command>gadgetUnreal("rotKamera")</command>
+		</gadget>
+		<gadget name="rotKameraLeft" type="button" foreground="icons\Camera4" tooltiptext="Camera left" sizerel1024="20 52 52 84">
+			<command>cameraLeft(1) cameraLeft(0)</command>
+		</gadget>
+		<gadget name="rotKameraFor" type="button" foreground="icons\Camera2" tooltiptext="Camera forward" sizerel1024="52 20 84 52">
+			<command>cameraWorldForward(1) cameraWorldForward(0)</command>
+		</gadget>
+		<gadget name="rotKameraForleft" type="button" foreground="icons\Camera1" tooltiptext="Camera forward left" sizerel1024="20 20 52 52">
+			<command>cameraWorldForwardLeft(1) cameraWorldForwardLeft(0)</command>
+		</gadget>
+		<gadget name="rotKameraForright" type="button" foreground="icons\Camera3" tooltiptext="Camera forward right" sizerel1024="84 20 116 52">
+			<command>cameraWorldForwardRight(1) cameraWorldForwardRight(0)</command>
+		</gadget>
+		<gadget name="rotKameraStopKreis" type="button" foreground="icons\Camera5" tooltiptext="$$20926$$Stop" sizerel1024="52 52 84 84">
+			<command>cameraLocalYawRight(1) cameraWorldForwardRight(1) cameraWorldForwardLeft(1) cameraWorldForward(1) cameraLeft(1) cameraRight(1) cameraWorldBackward(1) cameraWorldBackwardRight(1) cameraWorldBackwardLeft(1)</command>
+		</gadget>
+		<gadget name="rotKameraRight" type="button" foreground="icons\Camera6" tooltiptext="Camera right" sizerel1024="84 52 116 84">
+			<command>cameraRight(1) cameraRight(0)</command>
+		</gadget>
+		<gadget name="rotKameraBack" type="button" foreground="icons\Camera8" tooltiptext="Camera backward" sizerel1024="52 84 84 116">
+			<command>cameraWorldBackward(1) cameraWorldBackward(0)</command>
+		</gadget>
+		<gadget name="rotKameraBackright" type="button" foreground="icons\Camera9" tooltiptext="Camera backward right" sizerel1024="84 84 116 116">
+			<command>cameraWorldBackwardRight(1) cameraWorldBackwardRight(0)</command>
+		</gadget>
+		<gadget name="rotKamerabackleft" type="button" foreground="icons\Camera7" tooltiptext="Camera backward left" sizerel1024="20 84 52 116">
+			<command>cameraWorldBackwardLeft(1) cameraWorldBackwardLeft(0)</command>
+		</gadget>
+		<gadget name="rotKameraYawleft" type="button" foreground="icons\Editor RotateLeft" tooltiptext="Rotate Horizontally Left" sizerel1024="130 20 162 52">
+			<command>cameraYawLeft(1) cameraYawLeft(0)</command>
+		</gadget>
+		<gadget name="rotKameraStop1" type="button" foreground="icons\Camerarotstop" tooltiptext="$$20926$$Stop" sizerel1024="130 52 162 84">
+			<command>cameraYawLeft(1) cameraYawRight(1)</command>
+		</gadget>
+		<gadget name="rotKameraYawright" type="button" foreground="icons\Editor Rotateright" tooltiptext="Rotate Horizontally Right" sizerel1024="130 84 162 116">
+			<command>cameraYawRight(1) cameraYawRight(0)</command>
+		</gadget>
+		<gadget name="rotKamerayawl" type="button" foreground="icons\camerayawleft" tooltiptext="Rotate 45 Degrees left" sizerel1024="170 32 194 56">
+			<command>cameraLocalYawLeft(1) cameraLocalYawLeft(0)</command>
+		</gadget>
+		<gadget name="rotKameraStop2" type="button" foreground="icons\Camerarotstop" tooltiptext="$$20926$$Stop" sizerel1024="170 56 194 80">
+			<command>cameraLocalYawLeft(1) cameraLocalYawRight(1)</command>
+		</gadget>
+		<gadget name="rotKamerayawr" type="button" foreground="icons\camerayawRight" tooltiptext="Rotate 45 Degrees right" sizerel1024="170 80 194 104">
+			<command>cameraLocalYawRight(1) cameraLocalYawRight(0)</command>
+		</gadget>
+		<gadget name="rotKameraNice2" type="button" tooltiptext="Camera Nice up" foreground="icons\Editor nice2" sizerel1024="20 132 40 152">
+			<command>lookAt(500,500)</command>
+		</gadget>
+		<gadget name="rotKameraNice" type="button" tooltiptext="Camera Nice down" foreground="icons\Editor nice" sizerel1024="20 157 40 177">
+			<command>cameraNice</command>
+		</gadget>
+		<gadget name="rotKameraCamEdOpen" type="button" tooltiptext="$$20291$$Camera Editor" foreground="icons\editor cinematics" sizerel1024="60 152 85 177">
+			<command>editMode("CameraTracks")</command>
+		</gadget>
+		<gadget name="rotKameraPitchOpen" type="button" foreground="icons\Editor pitch" tooltiptext="Pitch Editor" sizerel1024="91 152 116 177">
+			<command>gadgetToggle("ChangeBias")</command>
+		</gadget>
+		<gadget name="rotKameraNormal" type="button" foreground="icons\Editor normal" tooltiptext="Normal View, Camera Limit OFF" sizerel1024="130 145 162 177">
+			<command>cameralimit(1) cameraRotate() cameraRotate()</command>
+		</gadget>
+		<gadget name="rotKameraStopAll" type="button" foreground="icons\Editor Stopall" tooltiptext="Stop All" bevelbutton="" sizerel1024="170 145 202 177">
+			<command>cameraLeft(1) cameraRight(1) cameraWorldForward(1) cameraWorldBackward(1) cameraWorldForwardLeft(1) cameraWorldForwardRight(1) cameraYawLeft(1) cameraYawRight(1) cameraLocalYawRight(1) cameraLocalYawLeft(1) cameraForward(1) cameraBackward(1) cameraWorldBackwardRight(1) cameraWorldBackwardLeft(1) cameraUp(1) cameraDown(1) camerapitchForward(1) camerapitchBackward(1)</command>
+		</gadget>
+		<gadget name="rotKameraLimit" type="checkButton" tooltiptext="Camera Limit Off/On" textfontsize="12" textfont="Arial nobold nodrop" foreground="ui\ui_check" z="11" size1024="250 702 355 722">Camera Limit
+			<command>cameraLimit</command>
+		</gadget>
+		<gadget name="rotKameraScrollOpen" type="button" foreground="ui\ui slider pip horizontal" tooltiptext="$$18991$$Scroll Speed:" sizerel1024="220 165 240 185">
+			<command>subModeEnter("Simulation","Options")</command>
+		</gadget>
+		<gadget type="button" name="rotKameraclose" sizerel1024="260 165 335 185" bevelbutton="" textcolor="0 0 0" textfont="Arial nodrop" tooltiptext="$$18457$$Close" textfontsize="12">$$18457$$Close
+			<command>gadgetUnreal("rotKamera")</command>
+		</gadget>
+		<gadget name="rotKameraFor" type="button" foreground="icons\camerazoomplus" sound="ageadvance" tooltiptext="Forwards, Zoom +" sizerel1024="208 20 240 52">
+			<command>gadgetUnreal("cameraStopZoom1") gadgetReal("cameraStopZoom2") gadgetFlash("cameraStopZoom2") cameraForward(1) cameraForward(0)</command>
+		</gadget>
+		<gadget name="rotKameraStopZoom1" type="button" foreground="icons\camerazoomstop" sound="ui_brick" tooltiptext="$$20926$$Stop" sizerel1024="208 52 240 84">
+			<command>cameraForward(1) cameraBackward(1)</command>
+		</gadget>
+		<gadget name="rotKameraStopZoom2" type="button" foreground="icons\camerazoomstop" hidden="" sound="ui_brick" tooltiptext="$$20926$$Stop" sizerel1024="208 52 240 84">
+			<command>gadgetUnreal("cameraStopZoom2") gadgetReal("cameraStopZoom1") cameraForward(1) cameraBackward(1)</command>
+		</gadget>
+		<gadget name="rotKameraback" type="button" foreground="icons\camerazoomminus" sound="UI_thunder" tooltiptext="Backwards, Zoom -" sizerel1024="208 84 240 116">
+			<command>gadgetUnreal("cameraStopZoom1") gadgetReal("cameraStopZoom2") gadgetFlash("cameraStopZoom2") cameraBackward(1) cameraBackward(0)</command>
+		</gadget>
+		<gadget name="rotKamerapitchfor" type="button" foreground="icons\Camera Pitchfor" tooltiptext="Pitch more flat" sizerel1024="260 30 285 55">
+			<command>camerapitchBackForward(1) camerapitchForward(0)</command>
+		</gadget>
+		<gadget name="rotKameraPitchBack" type="button" foreground="icons\Camera Pitchback" tooltiptext="Pitch more steep" sizerel1024="260 85 285 110">
+			<command>cameraPitchBackward(1) cameraPitchBackward(0)</command>
+		</gadget>
+		<gadget name="rotKameraLimitNormal" type="button" foreground="icons\Editor normal" tooltiptext="Normal View, Camera Limit ON" sizerel1024="260 60 280 80">
+			<command>lookAt(100,100) cameraLimit(1) cameraRotate() cameraRotate() cameraLimit(0)</command>
+		</gadget>
+		<gadget name="rotKameraStopPitch" type="button" foreground="icons\Camerarotstop" tooltiptext="$$20926$$Stop" sizerel1024="305 55 335 85">
+			<command>cameraUp(1) cameraDown(1) camerapitchForward(1) camerapitchBackward(1)</command>
+		</gadget>
+		<gadget name="rotKameraDownButton" type="button" foreground="icons\Camera hoch" tooltiptext="Camera up" sizerel1024="285 30 310 55">
+			<command>cameraUp(0)</command>
+		</gadget>
+		<gadget name="rotKamerapitchback" type="button" foreground="icons\Camera ab" tooltiptext="Camera down" sizerel1024="285 85 310 110">
+			<command>cameraDown(0)</command>
+		</gadget>
+		<gadget name="rotKamerapitchforab" type="button" foreground="icons\Camera Pitchfordown" tooltiptext="Pitch more flat and Camera down" sizerel1024="310 30 335 55">
+			<command>cameraPitchForward(0) cameraDown(0)</command>
+		</gadget>
+		<gadget name="rotKamerapitchbackauf" type="button" foreground="icons\Camera Pitchbackup" tooltiptext="Pitch more steep und Camera up" sizerel1024="310 85 335 110">
+			<command>cameraPitchBackward(0) cameraUp(0)</command>
+		</gadget>
+	</gadget>
+</layout>

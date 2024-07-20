@@ -1,0 +1,112 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<campaign name = "The Journey of Arkantos" version = "1">
+<BackgroundSet name = "Atlantis">
+<Image pos = "1">ui\campmap_atlantis1</Image>
+<Image pos = "2">ui\campmap_atlantis2</Image>
+<Image pos = "3">ui\campmap_atlantis3</Image>
+<Image pos = "4">ui\campmap_atlantis4</Image>
+<Image pos = "5">ui\campmap_atlantis5</Image>
+<Image pos = "6" textureReplace="">ui\campmap_atlantis6</Image>
+<Image pos = "7" textureReplace="">ui\campmap_atlantis7</Image>
+<Image pos = "8">ui\campmap_atlantis8</Image>
+<Image pos = "9">ui\campmap_atlantis9</Image>
+<Image pos = "10">ui\campmap_atlantis10</Image>
+<Image pos = "11">ui\campmap_atlantis11</Image>
+<Image pos = "12">ui\campmap_atlantis12</Image>
+</BackgroundSet>   
+<BackgroundSet name = "Greece">
+<Image pos = "1">ui\campmap_greece1</Image>
+<Image pos = "2">ui\campmap_greece2</Image>
+<Image pos = "3">ui\campmap_greece3</Image>
+<Image pos = "4">ui\campmap_greece4</Image>
+<Image pos = "5">ui\campmap_greece5</Image>
+<Image pos = "6">ui\campmap_greece6</Image>
+<Image pos = "7" textureReplace="">ui\campmap_greece7</Image>
+<Image pos = "8" textureReplace="">ui\campmap_greece8</Image>
+<Image pos = "9">ui\campmap_greece9</Image>
+<Image pos = "10">ui\campmap_greece10</Image>
+<Image pos = "11">ui\campmap_greece11</Image>
+<Image pos = "12">ui\campmap_greece12</Image>
+</BackgroundSet> 
+	<BackgroundSet name = "Norselands">
+		<Image pos = "1">ui\campmap_Norselands1</Image>
+		<Image pos = "2">ui\campmap_Norselands2</Image>
+		<Image pos = "3" textureReplace="">ui\campmap_Norselands3</Image>
+		<Image pos = "4" textureReplace="">ui\campmap_Norselands4</Image>
+		<Image pos = "5">ui\campmap_Norselands5</Image>
+		<Image pos = "6">ui\campmap_Norselands6</Image>
+		<Image pos = "7">ui\campmap_Norselands7</Image>
+		<Image pos = "8">ui\campmap_Norselands8</Image>
+		<Image pos = "9">ui\campmap_Norselands9</Image>
+		<Image pos = "10">ui\campmap_Norselands10</Image>
+		<Image pos = "11">ui\campmap_Norselands11</Image>
+		<Image pos = "12">ui\campmap_Norselands12</Image>
+	</BackgroundSet>  
+<Scenario dispName = "Prologue just another dream" filename = "Arkantos\1.scn" BackgroundSet = "Atlantis">
+Arkantos is called to a dream from Athena who tells him how he can earn his reputation.
+	<Overlay offset = "463 341" size = "64 128">ui\overlay_arck_35</Overlay>
+		<Overlay offset = "480 401" size = "32 32">ui\overlay_red_09</Overlay>
+</Scenario>
+
+<Scenario dispName = "One Step from Retirement" filename = "Arkantos\2.scn" BackgroundSet = "Greece">
+Arkantos goes to the city of Andros and requests a position in the army.
+		<Overlay offset = "479 281" size = "64 64">ui\overlay_banner_28</Overlay>
+	<Overlay offset = "496 341" size = "32 32">ui\overlay_red_09</Overlay>
+</Scenario>
+
+<Scenario dispName = "Reaching the Docks" filename = "Arkantos\3.scn" BackgroundSet = "Greece">
+Arkantos must now capture the enemy docks, so that he can continue his journey.
+		<Overlay offset = "497 421" size = "64 64">ui\overlay_Kemsyt_20</Overlay>
+	<Overlay offset = "514 481" size = "32 32">ui\overlay_red_09</Overlay>
+	<Overlay offset = "479 281" size = "64 64">ui\overlay_banner_28</Overlay>
+		<Overlay offset = "496 341" size = "32 32">ui\overlay_blue_09</Overlay>  
+</Scenario>
+
+<Scenario dispName = "The Boxed Isles" filename = "Arkantos\4.scn" BackgroundSet = "Greece">
+Arkantos sails through the Boxed isles, nothing can go wrong. Or can it?
+		<Overlay offset = "674 492" size = "54 54">ui\overlay_kamos_5</Overlay>
+	<Overlay offset = "691 545" size = "32 32">ui\overlay_red_09</Overlay>
+		<Overlay offset = "497 421" size = "64 64">ui\overlay_Kemsyt_20</Overlay>
+	<Overlay offset = "479 281" size = "64 64">ui\overlay_banner_28</Overlay>
+	<Overlay offset = "514 481" size = "32 32">ui\overlay_blue_09</Overlay>  
+	<Overlay offset = "496 341" size = "32 32">ui\overlay_blue_09</Overlay>  
+</Scenario>
+
+<Scenario dispName = "Breaking into Agammemnons Camp" filename = "Arkantos\5.scn" BackgroundSet = "Greece">
+Arkantos breaks siege on Agammemnon's Camp
+		<Overlay offset = "860 234" size = "128 128">ui\overlay_gate_07</Overlay>
+	<Overlay offset = "860 244" size = "32 32">ui\overlay_red_09</Overlay>
+	<Overlay offset = "479 281" size = "64 64">ui\overlay_banner_28</Overlay>
+		<Overlay offset = "497 421" size = "64 64">ui\overlay_Kemsyt_20</Overlay>
+	<Overlay offset = "724 452" size = "128 128">ui\overlay_ship_34</Overlay>
+	<Overlay offset = "731 545" size = "32 32">ui\overlay_blue_09</Overlay>  
+	<Overlay offset = "514 481" size = "32 32">ui\overlay_blue_09</Overlay>  
+	<Overlay offset = "496 341" size = "32 32">ui\overlay_blue_09</Overlay>  
+</Scenario>
+
+<Scenario dispName = "Aftermath of the War" filename = "Arkantos\6.scn" BackgroundSet = "Greece">
+Cinematic showing the aftermath and destruction of the war
+		<Overlay offset = "860 354" size = "64 128">ui\overlay_shade_13</Overlay>
+	<Overlay offset = "860 364" size = "32 32">ui\overlay_red_09</Overlay>
+	<Overlay offset = "479 281" size = "64 64">ui\overlay_banner_28</Overlay>
+		<Overlay offset = "497 421" size = "64 64">ui\overlay_Kemsyt_20</Overlay>
+	<Overlay offset = "860 234" size = "128 128">ui\overlay_gate_07</Overlay>
+	<Overlay offset = "724 452" size = "128 128">ui\overlay_ship_34</Overlay>
+	<Overlay offset = "860 244" size = "32 32">ui\overlay_blue_09</Overlay>  
+	<Overlay offset = "731 545" size = "32 32">ui\overlay_blue_09</Overlay>  
+	<Overlay offset = "514 481" size = "32 32">ui\overlay_blue_09</Overlay>  
+	<Overlay offset = "496 341" size = "32 32">ui\overlay_blue_09</Overlay>  
+</Scenario>
+
+<Scenario dispName = "Returning to retirement" filename = "Arkantos\7.scn" BackgroundSet = "Atlantis">
+Arkantos returns to retirement with his friends.
+	<Overlay offset = "463 341" size = "64 64">ui\overlay_Ajax_08</Overlay>
+	<Overlay offset = "480 401 " size = "32 32">ui\overlay_red_09</Overlay>
+</Scenario>
+
+<Scenario dispName = "Credits" filename = "Arkantos\8.scn" BackgroundSet = "Norselands">
+A two minute scenario that says who made the game, thanks for playing to all those who enjoyed this campaign.
+		<Overlay offset = "483 351" size = "64 64">ui\overlay_guardian_15</Overlay> 
+	<Overlay offset = "483 411" size = "32 32">ui\overlay_red_09</Overlay>
+</Scenario>
+</campaign>

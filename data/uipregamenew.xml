@@ -1,0 +1,469 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<layout>
+		<gadget type="button" name="goodies" size1024="995 40 1015 60" textfont="AgeText" textfontsize="12" textcolor="0 255 255" mouseovertext="Open goodies!" foreground="ui/objectivesbox">E
+			<command>gadgetReal("Extra stuff")</command>
+		</gadget>
+
+	<gadget name="Extra stuff" type="gadget" size1024="0 0 0 0" background="UI\ui_med_gray" bevel="" titlebar="" hidden="" windowzstyle="" closeonesc="" moveable="">
+		<gadget type="button" name="normalPitch" size1024="995 40 1015 60" textfont="AgeText" textfontsize="12" textcolor="255 255 255" mouseovertext="Pitch + Zoom Normal" foreground="ui/objectivesbox">N
+			<command>configSetInt("limitPitch",45) cameraRotate() cameraRotate()</command>
+		</gadget>
+		<gadget type="textField" name="playMusikeList1" size1024="0 0 1024 20" textcolor="0 0 0" history="" bevel="">Load a scenario of your choice on the main menu by saving your scenario as one of the names in the dropdown box
+			<dropdown command="LoadScenario(&quot;~menu0&quot;) uiStartScenarioTest modeEnter(&quot;Campaign&quot;) modeEnter(&quot;Pregame&quot;) configToggle(&quot;cameraMovementLock&quot;)">~menu0</dropdown>
+			<dropdown command="LoadScenario(&quot;~menu1&quot;) uiStartScenarioTest modeEnter(&quot;Campaign&quot;) modeEnter(&quot;Pregame&quot;) configToggle(&quot;cameraMovementLock&quot;)">~menu1</dropdown>
+			<dropdown command="LoadScenario(&quot;~menu2&quot;) uiStartScenarioTest modeEnter(&quot;Campaign&quot;) modeEnter(&quot;Pregame&quot;) configToggle(&quot;cameraMovementLock&quot;)">~menu2</dropdown>
+			<dropdown command="LoadScenario(&quot;~menu3&quot;) uiStartScenarioTest modeEnter(&quot;Campaign&quot;) modeEnter(&quot;Pregame&quot;) configToggle(&quot;cameraMovementLock&quot;)">~menu3</dropdown>
+			<dropdown command="LoadScenario(&quot;~menu4&quot;) uiStartScenarioTest modeEnter(&quot;Campaign&quot;) modeEnter(&quot;Pregame&quot;) configToggle(&quot;cameraMovementLock&quot;)">~menu4</dropdown>
+			<dropdown command="LoadScenario(&quot;~menu5&quot;) uiStartScenarioTest modeEnter(&quot;Campaign&quot;) modeEnter(&quot;Pregame&quot;) configToggle(&quot;cameraMovementLock&quot;)">~menu5</dropdown>
+			<dropdown command="LoadScenario(&quot;~menu6&quot;) uiStartScenarioTest modeEnter(&quot;Campaign&quot;) modeEnter(&quot;Pregame&quot;) configToggle(&quot;cameraMovementLock&quot;)">~menu6</dropdown>
+			<dropdown command="LoadScenario(&quot;~menu7&quot;) uiStartScenarioTest modeEnter(&quot;Campaign&quot;) modeEnter(&quot;Pregame&quot;) configToggle(&quot;cameraMovementLock&quot;)">~menu7</dropdown>
+			<dropdown command="LoadScenario(&quot;~menu8&quot;) uiStartScenarioTest modeEnter(&quot;Campaign&quot;) modeEnter(&quot;Pregame&quot;) configToggle(&quot;cameraMovementLock&quot;)">~menu8</dropdown>
+			<dropdown command="LoadScenario(&quot;~menu9&quot;) uiStartScenarioTest modeEnter(&quot;Campaign&quot;) modeEnter(&quot;Pregame&quot;) configToggle(&quot;cameraMovementLock&quot;)">~menu9</dropdown>
+			<dropdown command="LoadScenario(&quot;~menu10&quot;) uiStartScenarioTest modeEnter(&quot;Campaign&quot;) modeEnter(&quot;Pregame&quot;) configToggle(&quot;cameraMovementLock&quot;)">~menu10</dropdown>
+			<dropdown command="LoadScenario(&quot;~menu11&quot;) uiStartScenarioTest modeEnter(&quot;Campaign&quot;) modeEnter(&quot;Pregame&quot;) configToggle(&quot;cameraMovementLock&quot;)">~menu11</dropdown>
+			<dropdown command="LoadScenario(&quot;~menu12&quot;) uiStartScenarioTest modeEnter(&quot;Campaign&quot;) modeEnter(&quot;Pregame&quot;) configToggle(&quot;cameraMovementLock&quot;)">~menu12</dropdown>
+			<dropdown command="LoadScenario(&quot;~menu13&quot;) uiStartScenarioTest modeEnter(&quot;Campaign&quot;) modeEnter(&quot;Pregame&quot;) configToggle(&quot;cameraMovementLock&quot;)">~menu13</dropdown>
+			<dropdown command="LoadScenario(&quot;~menu14&quot;) uiStartScenarioTest modeEnter(&quot;Campaign&quot;) modeEnter(&quot;Pregame&quot;) configToggle(&quot;cameraMovementLock&quot;)">~menu14</dropdown>
+			<dropdown command="LoadScenario(&quot;~menu15&quot;) uiStartScenarioTest modeEnter(&quot;Campaign&quot;) modeEnter(&quot;Pregame&quot;) configToggle(&quot;cameraMovementLock&quot;)">~menu15</dropdown>
+			<dropdown command="LoadScenario(&quot;~menu16&quot;) uiStartScenarioTest modeEnter(&quot;Campaign&quot;) modeEnter(&quot;Pregame&quot;) configToggle(&quot;cameraMovementLock&quot;)">~menu16</dropdown>
+			<dropdown command="LoadScenario(&quot;~menu17&quot;) uiStartScenarioTest modeEnter(&quot;Campaign&quot;) modeEnter(&quot;Pregame&quot;) configToggle(&quot;cameraMovementLock&quot;)">~menu17</dropdown>
+			<dropdown command="LoadScenario(&quot;~menu18&quot;) uiStartScenarioTest modeEnter(&quot;Campaign&quot;) modeEnter(&quot;Pregame&quot;) configToggle(&quot;cameraMovementLock&quot;)">~menu18</dropdown>
+			<dropdown command="LoadScenario(&quot;~menu19&quot;) uiStartScenarioTest modeEnter(&quot;Campaign&quot;) modeEnter(&quot;Pregame&quot;) configToggle(&quot;cameraMovementLock&quot;)">~menu19</dropdown>
+			<dropdown command="LoadScenario(&quot;~menu20&quot;) uiStartScenarioTest modeEnter(&quot;Campaign&quot;) modeEnter(&quot;Pregame&quot;) configToggle(&quot;cameraMovementLock&quot;)">~menu20</dropdown>
+		</gadget>
+		<gadget name="andPitch" type="textField" scrollvert="" mouseovertext="Pitch 1 - 175" size1024="925 40 990 60" textcolor="0 0 0" textfont="AgeText" textfontsize="12">
+			<dropdown command="configSetInt(&quot;limitPitch&quot;,1) cameraRotate() cameraRotate() configSetInt(&quot;limitPitch&quot;,45)">1</dropdown>
+			<dropdown command="configSetInt(&quot;limitPitch&quot;,2) cameraRotate() cameraRotate() configSetInt(&quot;limitPitch&quot;,45)">2</dropdown>
+			<dropdown command="configSetInt(&quot;limitPitch&quot;,3) cameraRotate() cameraRotate() configSetInt(&quot;limitPitch&quot;,45)">3</dropdown>
+			<dropdown command="configSetInt(&quot;limitPitch&quot;,4) cameraRotate() cameraRotate() configSetInt(&quot;limitPitch&quot;,45)">4</dropdown>
+			<dropdown command="configSetInt(&quot;limitPitch&quot;,5) cameraRotate() cameraRotate() configSetInt(&quot;limitPitch&quot;,45)">5</dropdown>
+			<dropdown command="configSetInt(&quot;limitPitch&quot;,6) cameraRotate() cameraRotate() configSetInt(&quot;limitPitch&quot;,45)">6</dropdown>
+			<dropdown command="configSetInt(&quot;limitPitch&quot;,7) cameraRotate() cameraRotate() configSetInt(&quot;limitPitch&quot;,45)">7</dropdown>
+			<dropdown command="configSetInt(&quot;limitPitch&quot;,8) cameraRotate() cameraRotate() configSetInt(&quot;limitPitch&quot;,45)">8</dropdown>
+			<dropdown command="configSetInt(&quot;limitPitch&quot;,10) cameraRotate() cameraRotate() configSetInt(&quot;limitPitch&quot;,45)">10</dropdown>
+			<dropdown command="configSetInt(&quot;limitPitch&quot;,12) cameraRotate() cameraRotate() configSetInt(&quot;limitPitch&quot;,45)">12</dropdown>
+			<dropdown command="configSetInt(&quot;limitPitch&quot;,15) cameraRotate() cameraRotate() configSetInt(&quot;limitPitch&quot;,45)">15</dropdown>
+			<dropdown command="configSetInt(&quot;limitPitch&quot;,20) cameraRotate() cameraRotate() configSetInt(&quot;limitPitch&quot;,45)">20</dropdown>
+			<dropdown command="configSetInt(&quot;limitPitch&quot;,25) cameraRotate() cameraRotate() configSetInt(&quot;limitPitch&quot;,45)">25</dropdown>
+			<dropdown command="configSetInt(&quot;limitPitch&quot;,30) cameraRotate() cameraRotate() configSetInt(&quot;limitPitch&quot;,45)">30</dropdown>
+			<dropdown command="configSetInt(&quot;limitPitch&quot;,35) cameraRotate() cameraRotate() configSetInt(&quot;limitPitch&quot;,45)">35</dropdown>
+			<dropdown command="configSetInt(&quot;limitPitch&quot;,40) cameraRotate() cameraRotate() configSetInt(&quot;limitPitch&quot;,45)">40</dropdown>
+			<dropdown command="configSetInt(&quot;limitPitch&quot;,50) cameraRotate() cameraRotate() configSetInt(&quot;limitPitch&quot;,45)">50</dropdown>
+			<dropdown command="configSetInt(&quot;limitPitch&quot;,55) cameraRotate() cameraRotate() configSetInt(&quot;limitPitch&quot;,45)">55</dropdown>
+			<dropdown command="configSetInt(&quot;limitPitch&quot;,60) cameraRotate() cameraRotate() configSetInt(&quot;limitPitch&quot;,45)">60</dropdown>
+			<dropdown command="configSetInt(&quot;limitPitch&quot;,70) cameraRotate() cameraRotate() configSetInt(&quot;limitPitch&quot;,45)">70</dropdown>
+			<dropdown command="configSetInt(&quot;limitPitch&quot;,80) cameraRotate() cameraRotate() configSetInt(&quot;limitPitch&quot;,45)">80</dropdown>
+			<dropdown command="configSetInt(&quot;limitPitch&quot;,90) cameraRotate() cameraRotate() configSetInt(&quot;limitPitch&quot;,45)">90</dropdown>
+			<dropdown command="configSetInt(&quot;limitPitch&quot;,100) cameraRotate() cameraRotate() configSetInt(&quot;limitPitch&quot;,45)">100</dropdown>
+			<dropdown command="configSetInt(&quot;limitPitch&quot;,120) cameraRotate() cameraRotate() configSetInt(&quot;limitPitch&quot;,45)">120</dropdown>
+			<dropdown command="configSetInt(&quot;limitPitch&quot;,135) cameraRotate() cameraRotate() configSetInt(&quot;limitPitch&quot;,45)">135</dropdown>
+			<dropdown command="configSetInt(&quot;limitPitch&quot;,150) cameraRotate() cameraRotate() configSetInt(&quot;limitPitch&quot;,45)">150</dropdown>
+			<dropdown command="configSetInt(&quot;limitPitch&quot;,175) cameraRotate() cameraRotate() configSetInt(&quot;limitPitch&quot;,45)">175</dropdown>
+		</gadget>
+		<gadget name="Lighting" type="textField" scrollvert="" mouseovertext="Change game lighting" size1024="810 40 915 60" textcolor="0 0 0" textfont="AgeText" textfontsize="12">
+			<dropdown command="uiApplyLightingSet(0)">Lighting1</dropdown>
+			<dropdown command="uiApplyLightingSet(1)">Lighting2</dropdown>
+			<dropdown command="uiApplyLightingSet(2)">Lighting3</dropdown>
+			<dropdown command="uiApplyLightingSet(3)">Lighting4</dropdown>
+			<dropdown command="uiApplyLightingSet(4)">Lighting5</dropdown>
+			<dropdown command="uiApplyLightingSet(5)">Lighting6</dropdown>
+			<dropdown command="uiApplyLightingSet(6)">Lighting7</dropdown>
+			<dropdown command="uiApplyLightingSet(7)">Lighting8</dropdown>
+			<dropdown command="uiApplyLightingSet(8)">Lighting9</dropdown>
+			<dropdown command="uiApplyLightingSet(9)">Lighting10</dropdown>
+			<dropdown command="uiApplyLightingSet(10)">Lighting11</dropdown>
+			<dropdown command="uiApplyLightingSet(11)">Lighting12</dropdown>
+			<dropdown command="uiApplyLightingSet(12)">Lighting13</dropdown>
+			<dropdown command="uiApplyLightingSet(13)">Lighting14</dropdown>
+			<dropdown command="uiApplyLightingSet(14)">Lighting15</dropdown>
+			<dropdown command="uiApplyLightingSet(15)">Lighting16</dropdown>
+			<dropdown command="uiApplyLightingSet(16)">Lighting17</dropdown>
+			<dropdown command="uiApplyLightingSet(17)">Lighting18</dropdown>
+		</gadget>
+		<gadget type="textField" name="playMusikeList1" size1024="810 70 1015 90" textcolor="0 0 0" history="" bevel="">Play music
+			<dropdown command="musicPlaySong(&quot;music/culture/greek to me.mp3&quot;)">greek to me</dropdown>
+			<dropdown command="musicPlaySong(&quot;music/culture/n. d. nile.mp3&quot;)">n. d. nile</dropdown>
+			<dropdown command="musicPlaySong(&quot;music/culture/of norse not!.mp3&quot;)">of norse not!</dropdown>
+			<dropdown command="musicPlaySong(&quot;music/fight/i wish i could throw shapes.mp3&quot;)">i wish i could throw shapes</dropdown>
+			<dropdown command="musicPlaySong(&quot;music/fight/li'l drips.mp3&quot;)">li'l drips</dropdown>
+			<dropdown command="musicPlaySong(&quot;music/fight/meatier shower.mp3&quot;)">meatier shower</dropdown>
+			<dropdown command="musicPlaySong(&quot;music/fight/oi, that pops!!!.mp3&quot;)">oi, that pops!!!</dropdown>
+			<dropdown command="musicPlaySong(&quot;music/fight/rot loaf.mp3&quot;)">rot loaf</dropdown>
+			<dropdown command="musicPlaySong(&quot;music/fight/the fire brigade.mp3&quot;)">the fire brigade</dropdown>
+			<dropdown command="musicPlaySong(&quot;music/interface/a cat named mittens.mp3&quot;)">a cat named mittens</dropdown>
+			<dropdown command="musicPlaySong(&quot;music/interface/gank sneakin'.mp3&quot;)">gank sneakin'</dropdown>
+			<dropdown command="musicPlaySong(&quot;music/interface/if you can use a doorknob.mp3&quot;)">if you can use a doorknob</dropdown>
+			<dropdown command="musicPlaySong(&quot;music/interface/ma'am...some other sunset.mp3&quot;)">ma'am...some other sunset</dropdown>
+			<dropdown command="musicPlaySong(&quot;music/quiet/(fine layers of) slaysenflite (mellow mix).mp3&quot;)">slaysenflite (mellow mix)</dropdown>
+			<dropdown command="musicPlaySong(&quot;music/quiet/adult swim (mellow mix).mp3&quot;)">adult swim (mellow mix)</dropdown>
+			<dropdown command="musicPlaySong(&quot;music/quiet/behold the great science fi (mellow mix).mp3&quot;)">behold the great science fi (mellow mix)</dropdown>
+			<dropdown command="musicPlaySong(&quot;music/quiet/chocolate outline (mellow mix).mp3&quot;)">chocolate outline (mellow mix)</dropdown>
+			<dropdown command="musicPlaySong(&quot;music/quiet/eat your potatoes (mellow mix).mp3&quot;)">eat your potatoes (mellow mix)</dropdown>
+			<dropdown command="musicPlaySong(&quot;music/quiet/flavor cats (in the comfort zone) (mellow mix).mp3&quot;)">flavor cats (in the comfort zone) (mellow mix)</dropdown>
+			<dropdown command="musicPlaySong(&quot;music/quiet/hoping for real betterness (mellow mix).mp3&quot;)">hoping for real betterness (mellow mix)</dropdown>
+			<dropdown command="musicPlaySong(&quot;music/quiet/in a pile of its own good (mellow mix).mp3&quot;)">n a pile of its own good (mellow mix)</dropdown>
+			<dropdown command="musicPlaySong(&quot;music/quiet/never mind the slacks and bashers (mellow mix).mp3&quot;)">never mind the slacks and bashers (mellow mix)</dropdown>
+			<dropdown command="musicPlaySong(&quot;music/quiet/suture self (mellow mix).mp3&quot;)">suture self (mellow mix)</dropdown>
+			<dropdown command="musicPlaySong(&quot;music/quiet/the ballad of ace lebaron (mellow mix).mp3&quot;)">the ballad of ace lebaron (mellow mix)</dropdown>
+			<dropdown command="musicPlaySong(&quot;music/standard/(fine layers of) slaysenflite.mp3&quot;)">slaysenflite </dropdown>
+			<dropdown command="musicPlaySong(&quot;music/standard/adult swim.mp3&quot;)">adult swim</dropdown>
+			<dropdown command="musicPlaySong(&quot;music/standard/behold the great science fi.mp3&quot;)">behold the great science fi</dropdown>
+			<dropdown command="musicPlaySong(&quot;music/standard/chocolate outline.mp3&quot;)">chocolate outline</dropdown>
+			<dropdown command="musicPlaySong(&quot;music/standard/eat your potatoes.mp3&quot;)">eat your potatoes</dropdown>
+			<dropdown command="musicPlaySong(&quot;music/standard/flavor cats (in the comfort zone).mp3&quot;)">flavor cats (in the comfort zone)</dropdown>
+			<dropdown command="musicPlaySong(&quot;music/standard/hoping for real betterness.mp3&quot;)">hoping for real betterness</dropdown>
+			<dropdown command="musicPlaySong(&quot;music/standard/in a pile of its own good.mp3&quot;)">n a pile of its own good</dropdown>
+			<dropdown command="musicPlaySong(&quot;music/standard/never mind the slacks and bashers.mp3&quot;)">never mind the slacks and bashers</dropdown>
+			<dropdown command="musicPlaySong(&quot;music/standard/suture self.mp3&quot;)">suture self</dropdown>
+			<dropdown command="musicPlaySong(&quot;music/standard/the ballad of ace lebaron.mp3&quot;)">the ballad of ace lebaron</dropdown>
+			<dropdown command="musicPlaySong(&quot;xpack/xmusic/a matt named kittens.mp3&quot;)">a matt named kittens</dropdown>
+			<dropdown command="musicPlaySong(&quot;xpack/xmusic/hotlantis.mp3&quot;)">hotlantis</dropdown>
+		</gadget>
+
+		<gadget name="musicElev" type="button" bevel="" tooltiptext="stop music" textfont="Arial nodrop" textfontsize="12" size1024="925 100 1015 120">stop music
+			<command>musicStop</command>
+		</gadget>
+
+		<gadget name="closeextra" type="button" bevel="" tooltiptext="close" textfont="Arial nodrop" textfontsize="12" size1024="810 100 915 120">Close
+			<command>gadgetUnReal("Extra stuff")</command>
+		</gadget>
+
+		<gadget name="togglefog" type="button" bevel="" tooltiptext="stop music" textfont="Arial nodrop" textfontsize="12" size1024="925 130 1015 150">Toggle fog
+			<command>fog</command>
+		</gadget>
+
+		<gadget name="toggleblackmap" type="button" bevel="" tooltiptext="close" textfont="Arial nodrop" textfontsize="12" size1024="810 130 915 150">Toggle Blackmap
+			<command>blackmap</command>
+		</gadget>
+
+		<gadget name="locktoggle" type="button" bevel="" tooltiptext="toggle camera locking" textfont="Arial nodrop" textfontsize="12" size1024="810 160 1015 180">Toggle Camera Locking
+			<command>configToggle("cameraMovementLock")</command>
+		</gadget>
+	</gadget>
+	<gadget name="MainMenu" type="gadget" size1024="0 730 1024 768" background="">
+		<gadget name="BordersRightTop" type="gadget" background="ui\ui pregame right top" size1024="512 500 874 730" z="3" transparent="" clampbackground=""></gadget>
+		<gadget name="BordersLeftTop" type="gadget" background="ui\ui pregame left top" size1024="150 500 512 730" z="3" transparent="" clampbackground=""></gadget>
+		<gadget name="BordersRightTopLogo" type="gadget" background="ui\ui pregame AOM Titan Logo Right" size1024="512 500 768 730" z="4" transparent="" clampbackground=""></gadget>
+		<gadget name="BordersLeftTopLogo" type="gadget" background="ui\ui pregame AOM Titan Logo Left" size1024="256 500 512 730" z="4" transparent="" clampbackground=""></gadget>
+		<gadget name="MainMenuOptions" type="gadget" size1024="0 725 1024 768">
+			<gadget name="LearnToPlayButton" type="stateButton" size1024="0 730 145 765" bevelbutton="" z="10" statebuttonuseinternalstates="" textfont="MainMenuButtons" textfontsize="18" textcolor="18 44 66" texturecoords="0 0.5 0.68 1">$$19825$$$$19825$$Learn To Play        
+				<command>gadgetReal("LearnSubMenu") gadgetUnReal("MainMenuOptions")</command>
+				<stateentry background="ui\ui pregame button"></stateentry>
+				<stateentry background="ui\ui pregame button clicked"></stateentry>
+				<stateentry background="ui\ui pregame button rollover"></stateentry>
+				<stateentry background="ui\ui pregame button glow"></stateentry>
+			</gadget>
+			<gadget name="CampaignButton" type="stateButton" size1024="150 730 295 765" bevelbutton="" z="10" statebuttonuseinternalstates="" textfont="MainMenuButtons" textfontsize="18" textcolor="18 44 66" texturecoords="0 0.5 0.68 1">$$19826$$Campaign        
+				<command>gadgetReal("CampaignSubMenu") gadgetUnReal("MainMenuOptions")</command>
+				<stateentry background="ui\ui pregame button"></stateentry>
+				<stateentry background="ui\ui pregame button clicked"></stateentry>
+				<stateentry background="ui\ui pregame button rollover"></stateentry>
+				<stateentry background="ui\ui pregame button glow"></stateentry>
+			</gadget>
+			<gadget name="SinglePlayerButton" type="stateButton" size1024="300 730 445 765" bevelbutton="" z="10" statebuttonuseinternalstates="" textfont="MainMenuButtons" textfontsize="18" textcolor="18 44 66" texturecoords="0 0.5 0.68 1">$$19827$$Single Player          
+				<command>gadgetReal("SinglePlayerSubMenu") gadgetUnReal("MainMenuOptions")</command>
+				<stateentry background="ui\ui pregame button"></stateentry>
+				<stateentry background="ui\ui pregame button clicked"></stateentry>
+				<stateentry background="ui\ui pregame button rollover"></stateentry>
+				<stateentry background="ui\ui pregame button glow"></stateentry>
+			</gadget>
+			<gadget name="MultiplayerButton" type="stateButton" size1024="450 730 596 765" bevelbutton="" z="10" statebuttonuseinternalstates="" textfont="MainMenuButtons" textfontsize="18" textcolor="18 44 66" texturecoords="0 0.5 0.68 1">$$19828$$Multiplayer          
+				<command>gadgetReal("MultiPlayerSubMenu") gadgetUnReal("MainMenuOptions")</command>
+				<stateentry background="ui\ui pregame button"></stateentry>
+				<stateentry background="ui\ui pregame button clicked"></stateentry>
+				<stateentry background="ui\ui pregame button rollover"></stateentry>
+				<stateentry background="ui\ui pregame button glow"></stateentry>
+			</gadget>
+			<gadget name="OptionsButton" type="stateButton" size1024="600 730 745 765" bevelbutton="" z="10" statebuttonuseinternalstates="" textfont="MainMenuButtons" textfontsize="18" textcolor="18 44 66" texturecoords="0 0.5 0.68 1">$$19829$$Options          
+				<command>subModeEnter("PreGame","Options")</command>
+				<stateentry background="ui\ui pregame button"></stateentry>
+				<stateentry background="ui\ui pregame button clicked"></stateentry>
+				<stateentry background="ui\ui pregame button rollover"></stateentry>
+				<stateentry background="ui\ui pregame button glow"></stateentry>
+			</gadget>
+			<gadget name="MoreButton" type="stateButton" size1024="750 730 895 765" bevelbutton="" z="10" statebuttonuseinternalstates="" textfont="MainMenuButtons" textfontsize="18" textcolor="18 44 66" texturecoords="0 0.5 0.68 1">$$19830$$More          
+				<command>gadgetReal("MoreSubMenu") gadgetUnReal("MainMenuOptions")</command>
+				<stateentry background="ui\ui pregame button"></stateentry>
+				<stateentry background="ui\ui pregame button clicked"></stateentry>
+				<stateentry background="ui\ui pregame button rollover"></stateentry>
+				<stateentry background="ui\ui pregame button glow"></stateentry>
+			</gadget>
+			<gadget name="ExitButton" type="stateButton" size1024="900 730 1020 765" bevelbutton="" z="10" statebuttonuseinternalstates="" textfont="MainMenuButtons" textfontsize="18" textcolor="18 44 66" texturecoords="0 0.5 0.68 1">$$19831$$Exit          
+				<command>exit(false)</command>
+				<stateentry background="ui\ui pregame button"></stateentry>
+				<stateentry background="ui\ui pregame button clicked"></stateentry>
+				<stateentry background="ui\ui pregame button rollover"></stateentry>
+				<stateentry background="ui\ui pregame button glow"></stateentry>
+			</gadget>
+		</gadget>
+		<gadget name="LearnSubMenu" type="gadget" size1024="0 725 1024 768" hidden="">
+			<gadget name="LearnToPlaySubButton" type="stateButton" size1024="0 730 195 765" bevelbutton="" z="10" statebuttonuseinternalstates="" textfont="MainMenuButtons" textfontsize="18" textcolor="18 44 66" texturecoords="0 0.5 0.68 1">$$19876$$Tutorial
+				<command>gadgetUnReal("MainMenu") campaignStart("Learn To Play.cpn") campaignResetCurScenario() campaignPlayCurrent()</command>
+				<stateentry background="ui\ui pregame button"></stateentry>
+				<stateentry background="ui\ui pregame button clicked"></stateentry>
+				<stateentry background="ui\ui pregame button rollover"></stateentry>
+				<stateentry background="ui\ui pregame button glow"></stateentry>
+			</gadget>
+			<gadget name="NorseIGCButton" type="stateButton" size1024="200 730 395 765" bevelbutton="" z="10" statebuttonuseinternalstates="" textfont="MainMenuButtons" textfontsize="18" textcolor="18 44 66" texturecoords="0 0.5 0.68 1">$$19832$$Cinematic
+				<command>gadgetUnReal("MainMenu") LoadScenario("spc\cinematics\aomspno.scn")</command>
+				<stateentry background="ui\ui pregame button"></stateentry>
+				<stateentry background="ui\ui pregame button clicked"></stateentry>
+				<stateentry background="ui\ui pregame button rollover"></stateentry>
+				<stateentry background="ui\ui pregame button glow"></stateentry>
+			</gadget>
+			<gadget name="EgyptianIGCButton" type="stateButton" size1024="400 730 595 765" bevelbutton="" z="10" statebuttonuseinternalstates="" textfont="MainMenuButtons" textfontsize="18" textcolor="18 44 66" texturecoords="0 0.5 0.68 1">$$19833$$Egyptian Cinematic
+				<command>gadgetUnReal("MainMenu") LoadScenario("spc\cinematics\aomspeg.scn")</command>
+				<stateentry background="ui\ui pregame button"></stateentry>
+				<stateentry background="ui\ui pregame button clicked"></stateentry>
+				<stateentry background="ui\ui pregame button rollover"></stateentry>
+				<stateentry background="ui\ui pregame button glow"></stateentry>
+			</gadget>
+			<gadget name="AtlanteanIGCButton" type="stateButton" size1024="600 730 795 765" bevelbutton="" z="10" statebuttonuseinternalstates="" textfont="MainMenuButtons" textfontsize="18" textcolor="18 44 66" texturecoords="0 0.5 0.68 1">$$23979$$Atlantean Cinematic
+				<command>gadgetUnReal("MainMenu") LoadScenario("xspc\aomxtutorial.scx")</command>
+				<stateentry background="ui\ui pregame button"></stateentry>
+				<stateentry background="ui\ui pregame button clicked"></stateentry>
+				<stateentry background="ui\ui pregame button rollover"></stateentry>
+				<stateentry background="ui\ui pregame button glow"></stateentry>
+			</gadget>
+			<gadget name="LearnMainMenuButton" type="stateButton" size1024="800 730 995 765" bevelbutton="" z="10" statebuttonuseinternalstates="" textfont="MainMenuButtons" textfontsize="18" textcolor="18 44 66" texturecoords="0 0.5 0.68 1">$$18582$$Main Menu        
+				<command>gadgetReal("MainMenuOptions") gadgetUnReal("LearnSubMenu")</command>
+				<stateentry background="ui\ui pregame button"></stateentry>
+				<stateentry background="ui\ui pregame button clicked"></stateentry>
+				<stateentry background="ui\ui pregame button rollover"></stateentry>
+				<stateentry background="ui\ui pregame button glow"></stateentry>
+			</gadget>
+		</gadget>
+		<gadget name="CampaignSubMenu" type="gadget" size1024="0 725 1024 768" hidden="">
+			<gadget name="CampaignButton" type="stateButton" size1024="0 730 245 765" bevelbutton="" z="10" statebuttonuseinternalstates="" textfont="MainMenuButtons" textfontsize="18" textcolor="18 44 66" texturecoords="0 0.5 0.68 1">$$23593$$AOM Campaign        
+				<command>modeEnter("Campaign") campaignSetHackyLoadScenarioMode(0) campaignStart("main campaign.cpn")</command>
+				<stateentry background="ui\ui pregame button"></stateentry>
+				<stateentry background="ui\ui pregame button clicked"></stateentry>
+				<stateentry background="ui\ui pregame button rollover"></stateentry>
+				<stateentry background=""></stateentry>
+			</gadget>
+			<gadget name="TitansCampaignButton" type="stateButton" size1024="250 730 495 765" bevelbutton="" z="10" statebuttonuseinternalstates="" textfont="MainMenuButtons" textfontsize="18" textcolor="18 44 66" texturecoords="0 0.5 0.68 1">$$23594$$Titans Campaign
+				<command>modeEnter("Campaign") campaignSetHackyLoadScenarioMode(0) campaignStart("xpack campaign.cpx")</command>
+				<stateentry background="ui\ui pregame button"></stateentry>
+				<stateentry background="ui\ui pregame button clicked"></stateentry>
+				<stateentry background="ui\ui pregame button rollover"></stateentry>
+				<stateentry background=""></stateentry>
+			</gadget>
+			<gadget name="LoadSaveGameButton" type="stateButton" size1024="500 730 745 765" bevelbutton="" z="10" statebuttonuseinternalstates="" textfont="MainMenuButtons" textfontsize="18" textcolor="18 44 66" texturecoords="0 0.5 0.68 1">$$19837$$Load Saved Game
+				<command>uiOpenSavedGameBrowser</command>
+				<stateentry background="ui\ui pregame button"></stateentry>
+				<stateentry background="ui\ui pregame button clicked"></stateentry>
+				<stateentry background="ui\ui pregame button rollover"></stateentry>
+				<stateentry background=""></stateentry>
+			</gadget>
+			<gadget name="CampaignMainMenuButton" type="stateButton" size1024="750 730 995 765" bevelbutton="" z="10" statebuttonuseinternalstates="" textfont="MainMenuButtons" textfontsize="18" textcolor="18 44 66" texturecoords="0 0.5 0.68 1">$$18582$$Main Menu        
+				<command>gadgetReal("MainMenuOptions") gadgetUnReal("CampaignSubMenu")</command>
+				<stateentry background="ui\ui pregame button"></stateentry>
+				<stateentry background="ui\ui pregame button clicked"></stateentry>
+				<stateentry background="ui\ui pregame button rollover"></stateentry>
+				<stateentry background=""></stateentry>
+			</gadget>
+		</gadget>
+		<gadget name="SinglePlayerSubMenu" type="gadget" size1024="0 725 1024 768" hidden="">
+			<gadget name="RandomMapButton" type="stateButton" size1024="0 730 145 765" bevelbutton="" z="10" statebuttonuseinternalstates="" textfont="MainMenuButtons" textfontsize="18" textcolor="18 44 66" texturecoords="0 0.5 0.68 1">$$19836$$Random Map
+				<command>modeEnter("SinglePlayerSetup")</command>
+				<stateentry background="ui\ui pregame button"></stateentry>
+				<stateentry background="ui\ui pregame button clicked"></stateentry>
+				<stateentry background="ui\ui pregame button rollover"></stateentry>
+				<stateentry background=""></stateentry>
+			</gadget>
+			<gadget name="SinglePlayer-CampaignButton" type="stateButton" size1024="150 730 295 765" bevelbutton="" z="10" statebuttonuseinternalstates="" textfont="MainMenuButtons" textfontsize="18" textcolor="18 44 66" texturecoords="0 0.5 0.68 1">$$23593$$AOM Campaign        
+				<command>modeEnter("Campaign") campaignSetHackyLoadScenarioMode(0) campaignStart("main campaign.cpn")</command>
+				<stateentry background="ui\ui pregame button"></stateentry>
+				<stateentry background="ui\ui pregame button clicked"></stateentry>
+				<stateentry background="ui\ui pregame button rollover"></stateentry>
+				<stateentry background=""></stateentry>
+			</gadget>
+			<gadget name="SinglePlayer-TitansCampaignButton" type="stateButton" size1024="300 730 445 765" bevelbutton="" z="10" statebuttonuseinternalstates="" textfont="MainMenuButtons" textfontsize="18" textcolor="18 44 66" texturecoords="0 0.5 0.68 1">$$23594$$Titans Campaign
+				<command>modeEnter("Campaign") campaignSetHackyLoadScenarioMode(0) campaignStart("xpack campaign.cpx")</command>
+				<stateentry background="ui\ui pregame button"></stateentry>
+				<stateentry background="ui\ui pregame button clicked"></stateentry>
+				<stateentry background="ui\ui pregame button rollover"></stateentry>
+				<stateentry background=""></stateentry>
+			</gadget>
+			<gadget name="LoadScenarioButton" type="stateButton" size1024="450 730 596 765" bevelbutton="" z="10" statebuttonuseinternalstates="" textfont="MainMenuButtons" textfontsize="18" textcolor="18 44 66" texturecoords="0 0.5 0.68 1">$$18441$$Load Scenario
+				<command>modeEnter("Campaign") campaignSetHackyLoadScenarioMode(1)</command>
+				<stateentry background="ui\ui pregame button"></stateentry>
+				<stateentry background="ui\ui pregame button clicked"></stateentry>
+				<stateentry background="ui\ui pregame button rollover"></stateentry>
+				<stateentry background=""></stateentry>
+			</gadget>
+			<gadget name="LoadSaveGameButton" type="stateButton" size1024="750 730 895 765" bevelbutton="" z="10" statebuttonuseinternalstates="" textfont="MainMenuButtons" textfontsize="18" textcolor="18 44 66" texturecoords="0 0.5 0.68 1">$$19837$$Load Saved Game
+				<command>uiOpenSavedGameBrowser</command>
+				<stateentry background="ui\ui pregame button"></stateentry>
+				<stateentry background="ui\ui pregame button clicked"></stateentry>
+				<stateentry background="ui\ui pregame button rollover"></stateentry>
+				<stateentry background=""></stateentry>
+			</gadget>
+			<gadget name="SinglePlayer-RecordButton" type="stateButton" size1024="600 730 745 765" bevelbutton="" z="10" statebuttonuseinternalstates="" textfont="MainMenuButtons" textfontsize="18" textcolor="18 44 66" texturecoords="0 0.5 0.68 1">$$19838$$Recorded Games        
+				<command>uiOpenRecordGameBrowser()</command>
+				<stateentry background="ui\ui pregame button"></stateentry>
+				<stateentry background="ui\ui pregame button clicked"></stateentry>
+				<stateentry background="ui\ui pregame button rollover"></stateentry>
+				<stateentry background=""></stateentry>
+			</gadget>
+			<gadget name="SinglePlayerMainMenuButton" type="stateButton" size1024="900 730 1020 765" bevelbutton="" z="10" statebuttonuseinternalstates="" textfont="MainMenuButtons" textfontsize="18" textcolor="18 44 66" texturecoords="0 0.5 0.68 1">$$18582$$Main Menu
+				<command>gadgetReal("MainMenuOptions") gadgetUnReal("SinglePlayerSubMenu")</command>
+				<stateentry background="ui\ui pregame button"></stateentry>
+				<stateentry background="ui\ui pregame button clicked"></stateentry>
+				<stateentry background="ui\ui pregame button rollover"></stateentry>
+				<stateentry background=""></stateentry>
+			</gadget>
+		</gadget>
+		<gadget name="MultiPlayerSubMenu" type="gadget" size1024="0 725 1024 768" hidden="">
+			<gadget name="OnlineButton" type="stateButton" size1024="0 730 320 765" bevelbutton="" z="10" statebuttonuseinternalstates="" textfont="MainMenuButtons" textfontsize="18" textcolor="18 44 66" texturecoords="0 0.5 0.68 1">$$22073$$Online
+				<command>doMPSetup(true)</command>
+				<stateentry background="ui\ui pregame button"></stateentry>
+				<stateentry background="ui\ui pregame button clicked"></stateentry>
+				<stateentry background="ui\ui pregame button rollover"></stateentry>
+				<stateentry background=""></stateentry>
+			</gadget>
+			<gadget name="LANButton" type="stateButton" size1024="325 730 665 765" bevelbutton="" z="10" statebuttonuseinternalstates="" textfont="MainMenuButtons" textfontsize="18" textcolor="18 44 66" texturecoords="0 0.5 0.68 1">$$22074$$LAN/Direct IP
+				<command>doMPSetup(false)</command>
+				<stateentry background="ui\ui pregame button"></stateentry>
+				<stateentry background="ui\ui pregame button clicked"></stateentry>
+				<stateentry background="ui\ui pregame button rollover"></stateentry>
+				<stateentry background=""></stateentry>
+			</gadget>
+			<gadget name="MultiPlayerMainMenuButton" type="stateButton" size1024="670 730 970 765" bevelbutton="" z="10" statebuttonuseinternalstates="" textfont="MainMenuButtons" textfontsize="18" textcolor="18 44 66" texturecoords="0 0.5 0.68 1">$$18582$$Main Menu
+				<command>gadgetReal("MainMenuOptions") gadgetUnReal("MultiPlayerSubMenu")</command>
+				<stateentry background="ui\ui pregame button"></stateentry>
+				<stateentry background="ui\ui pregame button clicked"></stateentry>
+				<stateentry background="ui\ui pregame button rollover"></stateentry>
+				<stateentry background=""></stateentry>
+			</gadget>
+		</gadget>
+		<gadget name="MoreSubMenu" type="gadget" size1024="0 725 1024 768" hidden="">
+			<gadget name="RecordButton" type="stateButton" size1024="0 730 145 765" bevelbutton="" z="10" statebuttonuseinternalstates="" textfont="MainMenuButtons" textfontsize="18" textcolor="18 44 66" texturecoords="0 0.5 0.68 1">$$19838$$Recorded Games        
+				<command>uiOpenRecordGameBrowser()</command>
+				<stateentry background="ui\ui pregame button"></stateentry>
+				<stateentry background="ui\ui pregame button clicked"></stateentry>
+				<stateentry background="ui\ui pregame button rollover"></stateentry>
+				<stateentry background=""></stateentry>
+			</gadget>
+			<gadget name="EditorButton" type="stateButton" size1024="150 730 295 765" bevelbutton="" z="10" statebuttonuseinternalstates="" textfont="MainMenuButtons" textfontsize="18" textcolor="18 44 66" texturecoords="0 0.5 0.68 1">$$19839$$Editor        
+				<command>startRandomGame() subModeClear("Simulation") subModeEnter("Simulation", "Editor")</command>
+				<stateentry background="ui\ui pregame button"></stateentry>
+				<stateentry background="ui\ui pregame button clicked"></stateentry>
+				<stateentry background="ui\ui pregame button rollover"></stateentry>
+				<stateentry background=""></stateentry>
+			</gadget>
+			<gadget name="HistoryButton" type="stateButton" size1024="300 730 445 765" bevelbutton="" z="10" statebuttonuseinternalstates="" textfont="MainMenuButtons" textfontsize="18" textcolor="18 44 66" texturecoords="0 0.5 0.68 1">$$19789$$History        
+				<command>uiTopicDetailHelp("history")</command>
+				<stateentry background="ui\ui pregame button"></stateentry>
+				<stateentry background="ui\ui pregame button clicked"></stateentry>
+				<stateentry background="ui\ui pregame button rollover"></stateentry>
+				<stateentry background=""></stateentry>
+			</gadget>
+			<gadget name="MoviesButton" type="stateButton" size1024="450 730 596 765" bevelbutton="" z="10" statebuttonuseinternalstates="" textfont="MainMenuButtons" textfontsize="18" textcolor="18 44 66" texturecoords="0 0.5 0.68 1">$$23595$$Movies
+				<command>gadgetReal("MoviesSubMenu") gadgetUnReal("MoreSubMenu")</command>
+				<stateentry background="ui\ui pregame button"></stateentry>
+				<stateentry background="ui\ui pregame button clicked"></stateentry>
+				<stateentry background="ui\ui pregame button rollover"></stateentry>
+				<stateentry background=""></stateentry>
+			</gadget>
+			<gadget name="AboutButton" type="stateButton" size1024="600 730 745 765" bevelbutton="" z="10" statebuttonuseinternalstates="" textfont="MainMenuButtons" textfontsize="18" textcolor="18 44 66" texturecoords="0 0.5 0.68 1">$$18447$$About AOM        
+				<command>gadgetReal("AboutBox")</command>
+				<stateentry background="ui\ui pregame button"></stateentry>
+				<stateentry background="ui\ui pregame button clicked"></stateentry>
+				<stateentry background="ui\ui pregame button rollover"></stateentry>
+				<stateentry background=""></stateentry>
+			</gadget>
+			<gadget name="DownloadUpdatesButton" type="stateButton" size1024="750 730 895 765" bevelbutton="" z="10" statebuttonuseinternalstates="" textfont="MainMenuButtons" textfontsize="18" textcolor="18 44 66" texturecoords="0 0.5 0.68 1">$$20111$$Update AoM
+				<command>startAutoPatcher</command>
+				<stateentry background="ui\ui pregame button"></stateentry>
+				<stateentry background="ui\ui pregame button clicked"></stateentry>
+				<stateentry background="ui\ui pregame button rollover"></stateentry>
+				<stateentry background=""></stateentry>
+			</gadget>
+			<gadget name="MoreMainMenuButton" type="stateButton" size1024="900 730 1020 765" bevelbutton="" z="10" statebuttonuseinternalstates="" textfont="MainMenuButtons" textfontsize="18" textcolor="18 44 66" texturecoords="0 0.5 0.68 1">$$18582$$Main Menu        
+				<command>gadgetReal("MainMenuOptions") gadgetUnReal("MoreSubMenu")</command>
+				<stateentry background="ui\ui pregame button"></stateentry>
+				<stateentry background="ui\ui pregame button clicked"></stateentry>
+				<stateentry background="ui\ui pregame button rollover"></stateentry>
+				<stateentry background=""></stateentry>
+			</gadget>
+		</gadget>
+		<gadget name="MoviesSubMenu" type="gadget" size1024="0 725 1024 768" hidden="">
+			<gadget name="MoviesAOMCinematicButton" type="stateButton" size1024="0 730 145 765" bevelbutton="" z="10" statebuttonuseinternalstates="" textfont="MainMenuButtons" textfontsize="18" textcolor="18 44 66" texturecoords="0 0.5 0.68 1">$$23600$$AOM Cinematic
+				<command>playMovie("AOMCinematic.aom")</command>
+				<stateentry background="ui\ui pregame button"></stateentry>
+				<stateentry background="ui\ui pregame button clicked"></stateentry>
+				<stateentry background="ui\ui pregame button rollover"></stateentry>
+				<stateentry background=""></stateentry>
+			</gadget>
+			<gadget name="MoviesTitansCinematicButton" type="stateButton" size1024="150 730 295 765" bevelbutton="" z="10" statebuttonuseinternalstates="" textfont="MainMenuButtons" textfontsize="18" textcolor="18 44 66" texturecoords="0 0.5 0.68 1">$$23601$$Titans Cinematic
+				<command>playMovie("AOMXCinematic.aom")</command>
+				<stateentry background="ui\ui pregame button"></stateentry>
+				<stateentry background="ui\ui pregame button clicked"></stateentry>
+				<stateentry background="ui\ui pregame button rollover"></stateentry>
+				<stateentry background=""></stateentry>
+			</gadget>
+			<gadget name="MoviesAOMCreditsButton" type="stateButton" size1024="300 730 445 765" bevelbutton="" z="10" statebuttonuseinternalstates="" textfont="MainMenuButtons" textfontsize="18" textcolor="18 44 66" texturecoords="0 0.5 0.68 1">$$23602$$AOM Credits
+				<command>playMovie("credits.aom")</command>
+				<stateentry background="ui\ui pregame button"></stateentry>
+				<stateentry background="ui\ui pregame button clicked"></stateentry>
+				<stateentry background="ui\ui pregame button rollover"></stateentry>
+				<stateentry background=""></stateentry>
+			</gadget>
+			<gadget name="MoviesTitansCreditsButton" type="stateButton" size1024="450 730 596 765" bevelbutton="" z="10" statebuttonuseinternalstates="" textfont="MainMenuButtons" textfontsize="18" textcolor="18 44 66" texturecoords="0 0.5 0.68 1">$$23603$$Titans Credits
+				<command>playMovie("XCredits.aom")</command>
+				<stateentry background="ui\ui pregame button"></stateentry>
+				<stateentry background="ui\ui pregame button clicked"></stateentry>
+				<stateentry background="ui\ui pregame button rollover"></stateentry>
+				<stateentry background=""></stateentry>
+			</gadget>
+			<gadget name="MoviesBackButton" type="stateButton" size1024="600 730 745 765" bevelbutton="" z="10" statebuttonuseinternalstates="" textfont="MainMenuButtons" textfontsize="18" textcolor="18 44 66" texturecoords="0 0.5 0.68 1">$$18458$$Back
+				<command>gadgetReal("MoreSubMenu") gadgetUnReal("MoviesSubMenu")</command>
+				<stateentry background="ui\ui pregame button"></stateentry>
+				<stateentry background="ui\ui pregame button clicked"></stateentry>
+				<stateentry background="ui\ui pregame button rollover"></stateentry>
+				<stateentry background=""></stateentry>
+			</gadget>
+		</gadget>
+		<gadget name="Login" type="dialog" size1024="350 275 673 450" background="Egypt God Background" hidden="">
+			<gadget name="UserName" type="textField" textfont="Arial nobold nodrop" textfontsize="12" textcolor="256 256 256" textcenterhoriz="" textcentervert="" size1024="370 305 653 325">User Name:</gadget>
+			<gadget name="Password" type="textField" textfont="Arial nobold nodrop" textfontsize="12" textcolor="256 256 256" textcenterhoriz="" textcentervert="" size1024="370 335 653 355">Password:</gadget>
+			<gadget name="LoginButton" type="button" foreground="Egypt Button Background" textfont="Arial nobold nodrop" textfontsize="12" textcolor="256 256 256" textcenterhoriz="" textcentervert="" bevelbutton="" size1024="461 425 561 445">Log In
+				<command>gadgetUnReal("Login")</command>
+			</gadget>
+		</gadget>
+	</gadget>
+	<gadget name="VersionString" type="textBox" size1024="0 700 200 740" background="" transparent="" textcolor="255 255 255" hidden=""></gadget>
+	<gadget name="AboutBox" type="gadget" windowzstyle="" size1024="154 56 871 709" hidden="" closeonesc="">
+		<gadget name="AboutBox-Background" type="gadget" size1024="162 23 863 744" background="ui\ui background opaque 1" tilebackground="" z="1">
+			<gadget tilebackgroundhoriz="" name="objectivesdialog-BordersTop" type="gadget" background="ui\ui border greek top middle" size1024="185 8 840 24"></gadget>
+			<gadget tilebackgroundhoriz="" name="objectivesdialog-BordersBottom" type="gadget" background="ui\ui border greek bottom middle" size1024="186 732 841 748"></gadget>
+			<gadget tilebackgroundvert="" name="objectivesdialog-BordersLeft" type="gadget" background="ui\ui border greek left middle" size1024="154 41 162 715"></gadget>
+			<gadget tilebackgroundvert="" name="objectivesdialog-BordersRight" type="gadget" background="ui\ui border greek right middle" size1024="864 40 872 715"></gadget>
+			<gadget name="objectivesdialog-BordersLeftTop" type="gadget" background="ui\ui border greek top left corner" size1024="154 8 186 40" z="11"></gadget>
+			<gadget name="objectivesdialog-BordersLeftBottom" type="gadget" background="ui\ui border greek bottom left corner" size1024="154 716 186 748" z="12"></gadget>
+			<gadget name="objectivesdialog-BordersRightBottom" type="gadget" background="ui\ui border greek bottom right corner" size1024="840 716 872 748" z="12"></gadget>
+			<gadget name="objectivesdialog-BordersRightTop" type="gadget" background="ui\ui border greek top right corner" size1024="840 8 872 40" z="12"></gadget>
+		</gadget>
+		<gadget name="AboutBox-Close" type="stateButton" size1024="441 694 601 726" bevelbutton="" z="101" statebuttonuseinternalstates="" textfont="PregameButtons" textfontsize="18" textcolor="18 44 66" textcenterhoriz="" textcentervert="" texturecoords="0 0 .625 1">$$18458$$Back
+			<stateentry background="ui\ui button long 160x32"></stateentry>
+			<stateentry background="ui\ui button long 160X32 clicked"></stateentry>
+			<stateentry background="ui\ui button long 160X32 rollover"></stateentry>
+			<stateentry background=""></stateentry>
+			<command>gadgetReal("MoreSubMenu") gadgetUnReal("AboutBox")</command>
+		</gadget>
+		<gadget name="AboutBox-versiontext" type="formatText" textfont="AboutBoxVersion" textfontsize="18" textcolor="255 208 0" size1024="181 45 834 73" textwrapon="" formattextusedatareplace="">$$18459$$Age of Mythology, version {gameVersion}</gadget>
+		<gadget name="AboutBox-copyrighttext" textwrapon="" type="formatText" textfont="AboutBoxCopyright" textfontsize="18" textcolor="255 208 0" size1024="181 79 834 106">$$18460$$</gadget>
+		<gadget name="AboutBox-warningtext" textwrapon="" type="formatText" textfont="AboutBoxWarning" textfontsize="16" textcolor="255 208 0" size1024="182 216 836 306">$$19290$$Warning:  This computer program is protected by copyright law and international treaties. Unauthorized reproduction or distribution of this program, or any portion of it, may result in severe civil and criminal penalties, and will be prosecuted to the maximum extent possible under the law.</gadget>
+		<gadget name="AboutBox-longlegaltext" textwrapon="" type="formatText" textfont="AboutBoxWarning" textfontsize="16" textcolor="255 208 0" size1024="181 111 837 201">$$22724$$ Microsoft, Age of Mythology, Ensemble, the Microsoft Games Studio logo, the .Net logo, Windows, and Windows NT are either registered trademarks or trademarks of Microsoft Corporation in the United States and/or other countries.</gadget>
+		<gadget name="AboutBox-Grannytext" textwrapon="" type="formatText" textfont="AboutBoxEntry" textfontsize="14" textcolor="255 208 0" size1024="183 340 836 392">$$18463$$</gadget>
+		<gadget name="AboutBox-Divxtext" textwrapon="" type="formatText" textfont="AboutBoxEntry" textfontsize="14" textcolor="255 208 0" size1024="183 393 836 445">$$18462$$Uses Bink Video. Copyright (C) 1997-2002 by RAD Game Tools, Inc.</gadget>
+		<gadget name="AboutBox-libjpegtext" textwrapon="" type="formatText" textfont="AboutBoxEntry" textfontsize="14" textcolor="255 208 0" size1024="183 499 836 551">$$20113$$This software is based in part on the work of the Independent JPEG Group.</gadget>
+		<gadget name="AboutBox-Miles1" textwrapon="" type="formatText" textfont="AboutBoxEntry" textfontsize="14" textcolor="255 208 0" size1024="183 446 836 498">$$20114$$Uses Miles Sound System. Copyright © 1991-2002 by RAD Game Tools, Inc</gadget>
+		<gadget name="AboutBox-Miles2" textwrapon="" type="formatText" textfont="AboutBoxEntry" textfontsize="14" textcolor="255 208 0" size1024="183 552 836 624">$$20115$$MPEG Layer-3 playback supplied with the Miles Sound System from RAD Game Tools, Inc.  MPEG Layer-3 audio compression technology licensed by Fraunhofer IIS and THOMSON multimedia</gadget>
+		<gadget name="AboutBox-PID" textwrapon="" type="formatText" textfont="AboutBoxPID" textfontsize="14" textcolor="255 208 0" size1024="182 629 835 681" formattextusedatareplace="">$$20116$$Product ID {ProductID}</gadget>
+		<gadget name="AboutBox-ScreenSeparator" type="gadget" size1024="178 627 846 628" background="ui\ui line yellow" z="11"></gadget>
+		<gadget name="AboutBox-ScreenSeparator2" type="gadget" size1024="181 320 849 321" background="ui\ui line yellow" z="11"></gadget>
+	</gadget>
+</layout>
